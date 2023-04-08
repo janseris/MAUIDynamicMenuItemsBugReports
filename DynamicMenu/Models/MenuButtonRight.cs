@@ -1,6 +1,6 @@
 ﻿namespace DynamicMenu.Models
 {
-    public enum MenuButtonPravo
+    public enum MenuButtonRight
     {
         Archeologie,
         BOZP, 

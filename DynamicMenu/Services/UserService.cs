@@ -15,27 +15,27 @@ namespace DynamicMenu.Services
             new User
             {
                 Name = "Archeologie",
-                Prava = new List<MenuButtonPravo> { MenuButtonPravo.Archeologie }
+                Prava = new List<MenuButtonRight> { MenuButtonRight.Archeologie }
             },
             new User
             {
                 Name = "Bozp",
-                Prava = new List<MenuButtonPravo> { MenuButtonPravo.BOZP }
+                Prava = new List<MenuButtonRight> { MenuButtonRight.BOZP }
             },
             new User
             {
                 Name = "MonitoringBozp",
-                Prava = new List<MenuButtonPravo> { MenuButtonPravo.Monitoring, MenuButtonPravo.BOZP }
+                Prava = new List<MenuButtonRight> { MenuButtonRight.Monitoring, MenuButtonRight.BOZP }
             },
             new User
             {
                 Name = "ArcheologieMonitoring",
-                Prava = new List<MenuButtonPravo> { MenuButtonPravo.Archeologie, MenuButtonPravo.Monitoring }
+                Prava = new List<MenuButtonRight> { MenuButtonRight.Archeologie, MenuButtonRight.Monitoring }
             },
             new User
             {
                 Name = "All",
-                Prava = new List<MenuButtonPravo> { MenuButtonPravo.Archeologie, MenuButtonPravo.Monitoring, MenuButtonPravo.BOZP }
+                Prava = new List<MenuButtonRight> { MenuButtonRight.Archeologie, MenuButtonRight.Monitoring, MenuButtonRight.BOZP }
             }
         };
 

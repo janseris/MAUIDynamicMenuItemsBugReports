@@ -52,30 +52,30 @@ namespace DynamicMenu.ViewModels
             await Shell.Current.DisplayAlert("Chyba", message, "OK");
         }
 
-        private async void UpdateMenuItems(List<MenuButtonPravo> prava)
+        private async void UpdateMenuItems(List<MenuButtonRight> prava)
         {
             if (prava.Count == 0)
             {
                 GoToLogin("Uživatel nemá žádná práva");
             }
-            ArcheologieMenuButtonVisible = prava.Contains(MenuButtonPravo.Archeologie);
-            BozpMenuButtonVisible = prava.Contains(MenuButtonPravo.BOZP);
-            MonitoringMenuButtonVisible = prava.Contains(MenuButtonPravo.Monitoring);
+            ArcheologieMenuButtonVisible = prava.Contains(MenuButtonRight.Archeologie);
+            BozpMenuButtonVisible = prava.Contains(MenuButtonRight.BOZP);
+            MonitoringMenuButtonVisible = prava.Contains(MenuButtonRight.Monitoring);
             GoToPage(prava.First());
         }
 
 
-        private async void GoToPage(MenuButtonPravo pravo)
+        private async void GoToPage(MenuButtonRight pravo)
         {
             switch (pravo)
             {
-                case MenuButtonPravo.Archeologie:
+                case MenuButtonRight.Archeologie:
                     await Shell.Current.GoToAsync($"//{nameof(ArcheologiePage)}");
                     break;
-                case MenuButtonPravo.BOZP:
+                case MenuButtonRight.BOZP:
                     await Shell.Current.GoToAsync($"//{nameof(BozpPage)}");
                     break;
-                case MenuButtonPravo.Monitoring:
+                case MenuButtonRight.Monitoring:
                     await Shell.Current.GoToAsync($"//{nameof(MonitoringPage)}");
                     break;
             }
